@@ -152,33 +152,6 @@ main {
   height: 100%;
   background-color: #fff;
 }
-.about {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  position: relative;
-  padding: 3rem 0;
-}
-.abt-header {
-  width: max-content;
-}
-.abt-content {
-  border-radius: 2rem;
-  padding: 1rem 2rem;
-  text-align: justify;
-  border: 0.3rem solid #4a6ca5;
-  min-width: 50%;
-  max-width: 70%;
-  -webkit-box-shadow: 10px 10px 0px 2px rgba(203, 203, 203, 1);
-  -moz-box-shadow: 10px 10px 0px 2px rgba(203, 203, 203, 1);
-  box-shadow: 10px 10px 0px 2px rgba(203, 203, 203, 1);
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  position: relative;
-  animation-fill-mode: both;
-}
 @keyframes slideInLeft {
   from {
     transform: translateX(-150%);
@@ -194,6 +167,30 @@ main {
   to {
     transform: translate(0);
   }
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem 0;
+}
+.abt-header {
+  width: max-content;
+}
+.abt-content {
+  border: 0.3rem solid #4a6ca5;
+  max-width: 70%;
+  border-radius: 2rem;
+  -webkit-box-shadow: 10px 10px 0px 0px #cbcbcb; 
+  -moz-box-shadow: 10px 10px 0px 0px #cbcbcb; 
+  box-shadow: 10px 10px 0px 0px #cbcbcb;
+  min-width: 50%;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+}
+.abt-content:nth-of-type(2) {
+  margin: 1rem 0 1rem auto;
 }
 .abt-content:nth-of-type(1) {
   min-height: 10rem;
@@ -422,6 +419,7 @@ iframe {
 }
 .bumper-info {
   width: auto;
+  height: 100%;
 }
 .bumper-info,
 .eq-info,
@@ -522,7 +520,7 @@ iframe {
   grid-area: header;
 }
 .eq-info {
-  height: 90%;
+  height: 100%;
 }
 .eq-info:nth-of-type(1) {
   grid-area: info1;
@@ -541,9 +539,9 @@ iframe {
   grid-area: img;
   background-color: #cbcbcb;
   border-radius: 2rem;
-  -webkit-box-shadow: 0 0px 0px 0px rgba(203, 203, 203, 1);
-  -moz-box-shadow: 0 0px 0px 0px rgba(203, 203, 203, 1);
-  box-shadow: 0 0px 0px 0px rgba(203, 203, 203, 1);
+  -webkit-box-shadow: 0 10px 0px 0px rgba(203, 203, 203, 1);
+  -moz-box-shadow: 0 10px 0px 0px rgba(203, 203, 203, 1);
+  box-shadow: 0 10px 0px 0px rgba(203, 203, 203, 1);
   position: relative;
   height: max-content;
 }
@@ -572,6 +570,7 @@ iframe {
   gap: 2rem;
   justify-content: center;
   align-items: center;
+  transform: translateY(5px);
 }
 .eq-img-wrapper img {
   border-radius: 1.5rem;
