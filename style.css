@@ -189,9 +189,6 @@ main {
   display: flex;
   align-items: center;
 }
-.abt-content:nth-of-type(2) {
-  margin: 1rem 0 1rem auto;
-}
 .abt-content:nth-of-type(1) {
   min-height: 10rem;
 }
@@ -206,7 +203,10 @@ main {
   animation: slideInLeft 0.5s linear both;
 }
 .abt-content:nth-of-type(2) {
-  margin: 1rem 0 1rem auto;
+  margin-top: 1rem;
+  margin-right: 10px;
+  margin-bottom: 1rem;
+  margin-left: auto;
   position: relative;
   min-height: 8rem;
 }
@@ -214,7 +214,7 @@ main {
   content: "";
   position: absolute;
   background-image: url(img/man.svg);
-  bottom: calc(100% - -4px);
+  bottom: calc(100% - -0.3rem);
   right: 10%;
   width: 8em;
   height: 8em;
@@ -232,7 +232,7 @@ main {
   content: "";
   position: absolute;
   background-image: url(img/saw.svg);
-  bottom: 100%;
+  bottom: calc(100% - -0.1rem);
   left: 10%;
   width: 8em;
   height: 8em;
@@ -333,7 +333,7 @@ main {
   grid-area: map;
 }
 iframe {
-  height: 100%;
+  height: calc(100% + 10px);
   width: 100%;
 }
 .contact-info {
